@@ -1,0 +1,60 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <style>
+     .frame {
+       border: 1px solid #ccc;
+       padding: 20%;
+     }
+ 
+     .plus-button {
+       font-size: 24px;
+       cursor: pointer;
+     }
+     .thumbnail-wrapper {
+       position: absolute;
+       width: 100px; /* Set the thumbnail width */
+       height: 100px; /* Set the thumbnail height */
+     }
+     .thumbnail {
+       max-width: 100%;
+       max-height: 100%;
+       width: 100px; /* Set the thumbnail width */
+       height: 100px; /* Set the thumbnail height */
+       object-fit: cover;
+     }
+     
+     
+   </style>
+     
+ </head>
+ 
+ <body>
+   <div class="container mt-5">
+     <div class="row">
+       <div class="col-md-9">
+         <div class="frame" id="frame">
+         </div>
+       </div>
+       <div class="col-md-3 d-flex align-items-center ">
+         <label class="btn btn-primary plus-button">
+           <input type="file" style="display: none;" id="fileInput" accept="image/*" multiple>
+           +
+         </label>
+       </div>
+     </div>
+   </div>
+   <script src="exercise.js">  </script>
+
+ </body>
+ 
+ </html>
+ 
+
+
+
